@@ -1,0 +1,6 @@
+{
+	"name": "redirects",
+	"type": "map",
+	"storeClass": "storage.idmap.redis.TransitiveMultiMap",
+	"db": 7
+}

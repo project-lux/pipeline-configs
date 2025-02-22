@@ -1,0 +1,19 @@
+{
+    "name": "yuag",
+    "type": "internal",
+    "namespace": "https://media.art.yale.edu/content/lux/",
+    "matches": ["https://media.art.yale.edu/content/lux/"],
+    "fetch": "https://media.art.yale.edu/content/lux/{identifier}",
+    "activitystreams": [
+	"https://media.art.yale.edu/discovery/lux/collection.json"
+    ],
+    "merge_order": 2,
+    "dumpFilePath": "/data-io2/input/yuag/luxjson.zip",
+    
+    "mapperClass": "sources.yale.yuag.mapper.YuagMapper",
+    "loaderClass": "sources.yale.yuag.loader.YuagLoader",
+    "harvesterClass": "process.base.harvester.ASHarvester",
+    "fetcherClass": "process.base.fetcher.Fetcher",
+    "totalRecords": 450000
+
+}

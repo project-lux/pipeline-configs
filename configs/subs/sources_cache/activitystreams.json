@@ -1,0 +1,11 @@
+{
+    "name": "activitystreams",
+    "type": "external",
+    "namespace": "this-does-not-match-anything-and-needs-to-be-here",
+    "matches": ["does-not-match-anything-but-needs-to-be-here"],
+    "fetch": "{identifier}",
+    "activitystreams": [],
+    "wikidata_property": [],
+    "merge_order": -1
+    
+}

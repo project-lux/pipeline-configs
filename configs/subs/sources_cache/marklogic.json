@@ -1,0 +1,10 @@
+{
+    "name": "marklogic",
+    "type": "results",
+    "namespace": "https://lux.collections.yale.edu/data/",
+    
+    "recordcacheClass": "storage.cache.postgres.MergedRecordCache",
+    "mapperClass": "sources.lux.marklogic.mapper.MlMapper",
+    "acquirerClass": null
+    
+}

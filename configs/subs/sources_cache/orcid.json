@@ -1,0 +1,14 @@
+{
+    "name": "orcid",
+    "type": "external",
+    "namespace": "https://orcid.org/",
+    "matches": ["/orcid.org/"],
+    "fetch": "http://orcid.org/{identifier}",
+    "wikidata_property": ["P496"],
+    "merge_order": 102,
+
+    "dumpFilePath": "orcid/orcid-summaries.tar.gz",
+    
+    "loaderClass": "sources.orcid.loader.OrcidLoader",
+    "mapperClass": "sources.orcid.mapper.OrcidMapper"
+}

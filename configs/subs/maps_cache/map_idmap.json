@@ -1,0 +1,7 @@
+{
+	"name": "idmap",
+	"type": "map",
+	"storeClass": "storage.idmap.redis.IdMap",
+	"db": 0,
+	"prefix_map_out": {"yuid":"https://lux.collections.yale.edu/data/"}
+}

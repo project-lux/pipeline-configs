@@ -1,0 +1,15 @@
+{
+	"name": "merged",
+	"type": "results",
+	"namespace": "https://lux.collections.yale.edu/data/",
+	"idmap_name": "idmap",
+
+    "differentDbPath": "global_diffs.lmdb",
+    "inverseEquivDbPath": "global_equivs.lmdb",
+    
+	"recordcacheClass": "storage.cache.postgres.MergedRecordCache",
+    "mapperClass": "sources.lux.final.mapper.Cleaner",
+    "reconcilerClass": "sources.lux.final.reconciler.GlobalReconciler",
+    "indexLoaderClass": "sources.lux.final.index_loader.GlobalIndexLoader",
+    "acquirerClass": null
+}

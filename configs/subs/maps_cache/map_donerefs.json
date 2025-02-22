@@ -1,0 +1,6 @@
+{
+	"name": "done_refs",
+	"type": "map",
+	"storeClass": "storage.idmap.redis.ReferenceMap",
+	"db": 4
+}

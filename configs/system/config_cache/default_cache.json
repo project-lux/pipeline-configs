@@ -1,0 +1,14 @@
+{
+    "name": "cache",
+    "type": "default",
+
+    "host": "localhost",
+    "port": 5432,
+    "user": "",
+    "password": "",
+    "dbname": "",
+
+    "overwrite": true,
+    "cursor_size": 1000
+    
+}

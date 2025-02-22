@@ -1,0 +1,6 @@
+{
+    "name": "map",
+    "type": "default",
+    "host": "localhost",
+    "port": 6379
+}

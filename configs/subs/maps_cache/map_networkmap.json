@@ -1,0 +1,6 @@
+{
+	"name": "networkmap",
+	"type": "map",
+	"storeClass": "storage.idmap.redis.NetworkOperationMap",
+	"db": 2
+}

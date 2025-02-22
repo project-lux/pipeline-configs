@@ -1,0 +1,19 @@
+{
+    "name": "ils",
+    "type": "internal",
+    "namespace": "https://linked-art.library.yale.edu/node/",
+    "matches": ["linked-art.library.yale.edu/node/"],
+    "fetch": "https://linked-art.library.yale.edu/node/{identifier}",
+    "activitystreams": [
+	"https://linked-art.library.yale.edu/activity/ils/collection",
+	"https://linked-art.library.yale.edu/activity/aspace/collection"
+    ],
+    "merge_order": 4,
+
+    "dumpFilePath": "yul",
+    "totalRecords": 35000000,
+
+    "mapperClass": "sources.yale.library.mapper.YulMapper",
+    "loaderClass": "sources.yale.library.loader.YulLoader",
+    "harvesterClass": "process.base.harvester.ASHarvester"
+}

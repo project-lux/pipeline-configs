@@ -1,0 +1,7 @@
+{
+	"name": "record_refs",
+	"type": "map",
+	"storeClass": "storage.idmap.redis.MultiMap",
+    "db": 8,
+    "maxItems": 10000
+}

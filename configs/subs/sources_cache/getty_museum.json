@@ -1,0 +1,10 @@
+{
+    "name": "getty_museum",
+    "type": "external",
+    "namespace": "https://data.getty.edu/museum/collection/",
+    "matches": ["data.getty.edu/museum/collection/"],
+    "fetch": "https://data.getty.edu/museum/collection/{identifier}",
+    "activitystreams": ["https://data.getty.edu/museum/collection/activity-stream"],
+    "wikidata_property": [],
+    "merge_order": 98    
+}
