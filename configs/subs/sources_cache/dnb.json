@@ -11,8 +11,14 @@
     "fetcherClass": "sources.dnb.fetcher.DnbFetcher",
     "mapperClass": "sources.dnb.mapper.DnbMapper",
     "loaderClass": "sources.dnb.loader.DnbLoader",
+    "cycleBreakPath": "dnb_cycle_breaks.json",
+    "dumps_dir": "dnb",
 
-    "dumpFilePath": "dnb/authorities-gnd_entityfacts.jsonld.gz",
-    "remoteDumpFile": "https://data.dnb.de/opendata/authorities_entityfacts.jsonld.gz",
-    "cycleBreakPath": "dnb_cycle_breaks.json"
+    "input_files": {
+        "records": [
+            {"url": "https://data.dnb.de/opendata/authorities-gnd-sachbegriff_lds.jsonld.gz"},
+            {"url": "https://data.dnb.de/opendata/authorities-gnd_entityfacts.jsonld.gz"},
+            {"url": "https://data.dnb.de/opendata/mapping-authorities-gnd-lcsh-ram_lds.jsonld.gz"}
+        ]
+    }
 }

@@ -20,5 +20,15 @@
     "externalLinksPath": "lcsh/external_links.nt",
     "cycleBreakPath": "lcnaf_cycle_breaks.json",
     
-    "totalRecords": 11000000
+    "totalRecords": 11000000,
+
+    "dumps_dir": "lcnaf",
+    "input_records": {
+        "records": [
+            {"url": "https://lds-downloads.s3.amazonaws.com/authorities/names.madsrdf.jsonld.gz"}
+        ],
+        "links": [
+            {"url": "https://id.loc.gov/download/externallinks.nt.zip"}
+        ]
+    }
 }

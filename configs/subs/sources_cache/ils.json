@@ -15,5 +15,6 @@
 
     "mapperClass": "sources.yale.library.mapper.YulMapper",
     "loaderClass": "sources.yale.library.loader.YulLoader",
-    "harvesterClass": "process.base.harvester.ASHarvester"
+    "harvesterClass": "process.base.harvester.ASHarvester",
+    "downloaderClass": "sources.yale.library.downloader.S3Downloader"
 }

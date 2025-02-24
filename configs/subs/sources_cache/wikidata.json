@@ -11,8 +11,10 @@
     "loaderClass": "sources.wikidata.loader.WdLoader",
     "indexLoaderClass": "sources.wikidata.index_loader.WdFileIndexLoader",
     "reconcilerClass": "sources.wikidata.reconciler.WdReconciler",
+    "downloaderClass": "pipeline.process.base.downloader.BaseDownloader",
 
     "inverseEquivDbPath": "id_to_wikidata.lmdb",
+    "remoteDumpFile": "https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz",
     "dumpFilePath": "wikidata/latest-all.json.gz",
     "cycleBreakPath": "wikidata_cycle_breaks.json",
     "totalRecords": 100000000

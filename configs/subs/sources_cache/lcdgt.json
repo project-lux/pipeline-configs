@@ -9,5 +9,12 @@
     "fetcherClass": "sources.lc.fetcher.LcdgtFetcher",
     "mapperClass": "sources.lc.mapper.LcnafMapper",
 
-    "totalRecords": 1830
+    "totalRecords": 1830,
+
+    "dumps_dir": "lcdgt",
+    "input_records": {
+        "records": [
+            {"url": "http://id.loc.gov/download/authorities/demographicTerms.madsrdf.jsonld.gz"}
+        ]
+    }
 }

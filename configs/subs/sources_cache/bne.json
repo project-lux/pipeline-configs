@@ -9,5 +9,15 @@
     
     "fetcherClass": "process.base.fetcher.Fetcher",
     "mapperClass": "sources.bne.mapper.BneMapper",
-    "cycleBreakPath": "bne_cycle_breaks.json"
+    "cycleBreakPath": "bne_cycle_breaks.json",
+    "dumps_dir": "bne",
+
+    "input_files": {
+        "records": [
+            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/entidad/entidad-JSON.zip"},
+            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/materia/materia-JSON.zip"},
+            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/geografico/geografico-JSON.zip"},
+            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/persona/persona-JSON.zip"}
+        ]
+    }
 }

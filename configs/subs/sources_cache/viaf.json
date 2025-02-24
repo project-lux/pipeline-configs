@@ -16,6 +16,9 @@
 
     "inverseEquivDbPath": "id_to_viaf.lmdb",        
 	"reconcileDumpPath": "viaf/viaf-links.txt.gz",
-    "dumpFilePath": "viaf/viaf-clusters.xml.gz"
+    "dumpFilePath": "viaf/viaf-clusters.xml.gz",
 
+    "downloaderClass": "sources.viaf.downloader.ViafDownloader",
+    "downloadMdUrl": "https://viaf.org/api/download/files",
+    "downloadXPath": "queryResult/Monthly/clusterRdfXml"
 }

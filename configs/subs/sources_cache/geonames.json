@@ -11,6 +11,13 @@
     "mapperClass": "sources.geonames.mapper.GnMapper",
     "loaderClass": "sources.geonames.loader.GnLoader",
 
-    "dumpFilePath": "geonames",
+    "input_files": {
+        "records": [
+            {"url": "https://download.geonames.org/export/dump/allCountries.zip"},
+            {"url": "https://download.geonames.org/export/dump/alternateNamesV2.zip"},
+            {"url": "https://download.geonames.org/export/dump/hierarchy.zip"}
+        ]
+    },
+
     "cycleBreakPath": "geonames_cycle_breaks.json"
 }

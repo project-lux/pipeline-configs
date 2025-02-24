@@ -9,6 +9,9 @@
     "dumpFilePath": "ror/ror-data.json",
     
     "loaderClass": "sources.ror.loader.RorLoader",
-    "mapperClass": "sources.ror.mapper.RorMapper"
-    
+    "mapperClass": "sources.ror.mapper.RorMapper",
+
+    "downloaderClass": "sources.ror.downloader.RorDownloader",
+    "downloadMdUrl": "https://zenodo.org/api/records/14429114/versions?size=5&sort=version&allversions=true",
+    "downloadXPath": "hits/hits[0]/files[0]/links/self"
 }
