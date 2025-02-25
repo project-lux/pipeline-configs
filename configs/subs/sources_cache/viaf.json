@@ -8,11 +8,11 @@
         "merge_order": 70,
     "mapSizeExponent": 32,
     
-	"fetcherClass": "sources.oclc.fetcher.ViafFetcher",
-	"mapperClass": "sources.oclc.mapper.ViafMapper",
-	"loaderClass": "sources.oclc.loader.ViafLoader",
-	"indexLoaderClass": "sources.oclc.index_loader.ViafIndexLoader",
-	"reconcilerClass": "sources.oclc.reconciler.ViafReconciler",
+	"fetcherClass": "sources.viaf.fetcher.ViafFetcher",
+	"mapperClass": "sources.viaf.mapper.ViafMapper",
+	"loaderClass": "sources.viaf.loader.ViafLoader",
+	"indexLoaderClass": "sources.viaf.index_loader.ViafIndexLoader",
+	"reconcilerClass": "sources.viaf.reconciler.ViafReconciler",
 
     "inverseEquivDbPath": "id_to_viaf.lmdb",        
 	"reconcileDumpPath": "viaf/viaf-links.txt.gz",
