@@ -1,5 +1,5 @@
 {
-    "name": "marklogic",
+    "name": "ml",
     "type": "default",
     "storeClass": "storage.marklogic.rest.MarkLogicStore",
     "database": "lux-content"

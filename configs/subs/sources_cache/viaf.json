@@ -18,7 +18,9 @@
 	"reconcileDumpPath": "viaf/viaf-links.txt.gz",
     "dumpFilePath": "viaf/viaf-clusters.xml.gz",
 
+    "dumps_dir": "viaf",
     "downloaderClass": "sources.viaf.downloader.ViafDownloader",
     "downloadMdUrl": "https://viaf.org/api/download/files",
-    "downloadXPath": "queryResult/Monthly/clusterRdfXml"
+    "downloadXPath": "queryResult/Monthly/clusterRdfXml",
+    "downloadUrlBase": "https://downloads.viaf.org/viaf/data/monthly/"
 }
