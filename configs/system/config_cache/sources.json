@@ -3,7 +3,7 @@
     "type": "config",
     "datacacheClass": "storage.cache.filesystem.FsCache",
     "tabletype": "cache",
-    "base_dir": "configs/subs",
+    "base_dir": "pipeline-configs/configs/subs",
     "harvesterClass": null,
     "downloaderClass": null,
     "loaderClass": null,
