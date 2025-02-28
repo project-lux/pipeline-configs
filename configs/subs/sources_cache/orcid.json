@@ -7,8 +7,14 @@
     "wikidata_property": ["P496"],
     "merge_order": 102,
 
-    "dumpFilePath": "orcid/orcid-summaries.tar.gz",
-    
+
     "loaderClass": "sources.orcid.loader.OrcidLoader",
-    "mapperClass": "sources.orcid.mapper.OrcidMapper"
+    "mapperClass": "sources.orcid.mapper.OrcidMapper",
+
+    "dumps_dir": "orcid",
+    "input_files": {
+        "records": [
+            {"url": "https://orcid.figshare.com/ndownloader/files/49560102", "path": "orcid-summaries.tar.gz"}
+        ]
+    }
 }
