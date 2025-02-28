@@ -19,8 +19,8 @@
     "cycleBreakPath": "lcsh_cycle_breaks.json",
     
     "totalRecords": 450000,
-    "dumps_dir": "lcnaf",
-    "input_records": {
+    "dumps_dir": "lcsh",
+    "input_files": {
         "records": [
             {"url": "https://lds-downloads.s3.amazonaws.com/authorities/subjects.madsrdf.jsonld.gz"}
         ],

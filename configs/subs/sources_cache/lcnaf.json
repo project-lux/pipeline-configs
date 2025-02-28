@@ -23,7 +23,7 @@
     "totalRecords": 11000000,
 
     "dumps_dir": "lcnaf",
-    "input_records": {
+    "input_files": {
         "records": [
             {"url": "https://lds-downloads.s3.amazonaws.com/authorities/names.madsrdf.jsonld.gz"}
         ],
