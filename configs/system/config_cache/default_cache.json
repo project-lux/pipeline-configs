@@ -2,7 +2,7 @@
     "name": "cache",
     "type": "default",
 
-    "host": "localhost",
+    "host": "",
     "port": 5432,
     "user": "",
     "password": "",

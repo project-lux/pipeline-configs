@@ -6,11 +6,10 @@
     "fetch": "https://api.ror.org/organizations/{identifier}",
     "wikidata_property": ["P6782"],
     "merge_order": 99,
-    "dumpFilePath": "ror/ror-data.json",
-    
     "loaderClass": "sources.ror.loader.RorLoader",
     "mapperClass": "sources.ror.mapper.RorMapper",
 
+    "dumpFilePath": "ror/ror-data.zip",
     "downloaderClass": "sources.ror.downloader.RorDownloader",
     "downloadMdUrl": "https://zenodo.org/api/records/14429114/versions?size=5&sort=version&allversions=true",
     "downloadXPath": "hits/hits[0]/files[0]/links/self"
