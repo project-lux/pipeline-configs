@@ -17,6 +17,10 @@
     "remoteDumpFile": "https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz",
     "dumpFilePath": "wikidata/latest-all.json.gz",
     "cycleBreakPath": "wikidata_cycle_breaks.json",
-    "totalRecords": 100000000
+    "totalRecords": 100000000,
+    "dumps_dir": "wikidata",
+    "input_files": {
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/wikidata.zip", "path": "wikidata.zip", "type": "zip.bz2/json"}]
+    }
 
 }

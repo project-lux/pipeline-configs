@@ -29,6 +29,7 @@
         ],
         "links": [
             {"url": "https://id.loc.gov/download/externallinks.nt.zip"}
-        ]
+        ],
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/lcnaf.zip", "path": "lcnaf.zip", "type": "zip.bz2/json"}]
     }
 }

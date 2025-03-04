@@ -12,5 +12,10 @@
     "dumpFilePath": "ror/ror-data.zip",
     "downloaderClass": "sources.ror.downloader.RorDownloader",
     "downloadMdUrl": "https://zenodo.org/api/records/14429114/versions?size=5&sort=version&allversions=true",
-    "downloadXPath": "hits/hits[0]/files[0]/links/self"
+    "downloadXPath": "hits/hits[0]/files[0]/links/self",
+
+    "dumps_dir": "ror",
+    "input_files": {
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/ror.zip", "path": "ror.zip", "type": "zip.bz2/json"}]
+    }
 }

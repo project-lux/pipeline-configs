@@ -17,6 +17,7 @@
     "input_files": {
         "records": [
             {"url": "https://data.geocode.earth/wof/dist/sqlite/whosonfirst-data-admin-latest.db.bz2", "path": "latest_wof.db.bz2"}
-        ]
+        ],
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/wikimedia.zip", "path": "wikimedia.zip", "type": "zip.bz2/json"}]
     }
 }

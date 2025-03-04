@@ -26,7 +26,8 @@
         ],
         "links": [
             {"url": "https://id.loc.gov/download/externallinks.nt.zip"}
-        ]
+        ],
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/lcsh.zip", "path": "lcsh.zip", "type": "zip.bz2/json"}]
     }
 
 

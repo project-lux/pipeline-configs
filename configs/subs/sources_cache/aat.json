@@ -12,8 +12,13 @@
     "mapperClass": "sources.getty.mapper.AatMapper",
     "indexLoaderClass": "process.base.index_loader.LmdbIndexLoader",
     "reconcilerClass": "sources.getty.reconciler.AatReconciler",
-    
+
     "reconcileDbPath": "label_to_aat.lmdb",
-    "cycleBreakPath": "aat_cycle_breaks.json"
+    "cycleBreakPath": "aat_cycle_breaks.json",
+
+    "dumps_dir": "aat",
+    "input_files": {
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/aat.zip", "path": "aat.zip", "type": "zip.bz2/json"}]
+    }
     
 }

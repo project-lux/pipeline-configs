@@ -11,5 +11,11 @@
     "fetcherClass": "sources.getty.fetcher.GettyFetcher",
     "harvesterClass": "sources.getty.harvester.GettyHarvester",
     "mapperClass": "sources.getty.mapper.TgnMapper",
-    "cycleBreakPath": "tgn_cycle_breaks.json"
+    "cycleBreakPath": "tgn_cycle_breaks.json",
+
+    "dumps_dir": "tgn",
+    "input_files": {
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/tgn.zip", "path": "tgn.zip", "type": "zip.bz2/json"}]
+    }
+
 }

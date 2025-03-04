@@ -14,6 +14,7 @@
     "input_files": {
         "records": [
             {"url": "https://orcid.figshare.com/ndownloader/files/49560102", "path": "orcid-summaries.tar.gz"}
-        ]
+        ],
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/orcid.zip", "path": "orcid.zip", "type": "zip.bz2/json"}]
     }
 }

@@ -19,6 +19,7 @@
             {"url": "https://data.dnb.de/opendata/authorities-gnd-sachbegriff_lds.jsonld.gz"},
             {"url": "https://data.dnb.de/opendata/authorities-gnd_entityfacts.jsonld.gz"},
             {"url": "https://data.dnb.de/opendata/mapping-authorities-gnd-lcsh-ram_lds.jsonld.gz"}
-        ]
+        ],
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/dnb.zip", "path": "dnb.zip", "type": "zip.bz2/json"}]
     }
 }

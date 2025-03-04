@@ -17,5 +17,10 @@
     "indexLoaderClass": "process.base.index_loader.LmdbIndexLoader",
     "reconcilerClass": "sources.getty.reconciler.UlanReconciler",
     
-    "reconcileDbPath": "label_to_ulan.lmdb"    
+    "reconcileDbPath": "label_to_ulan.lmdb",
+    "dumps_dir": "ulan",
+    "input_files": {
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/ulan.zip", "path": "ulan.zip", "type": "zip.bz2/json"}]
+    }
+
 }

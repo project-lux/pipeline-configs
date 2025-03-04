@@ -18,6 +18,7 @@
             {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/materia/materia-JSON.zip"},
             {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/geografico/geografico-JSON.zip"},
             {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/persona/persona-JSON.zip"}
-        ]
+        ],
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/bne.zip", "path": "bne.zip", "type": "zip.bz2/json"}]
     }
 }

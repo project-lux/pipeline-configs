@@ -22,5 +22,10 @@
     "downloaderClass": "sources.viaf.downloader.ViafDownloader",
     "downloadMdUrl": "https://viaf.org/api/download/files",
     "downloadXPath": "queryResult/Monthly/clusterRdfXml",
-    "downloadUrlBase": "https://downloads.viaf.org/viaf/data/monthly/"
+    "downloadUrlBase": "https://downloads.viaf.org/viaf/data/monthly/",
+
+    "input_files": {
+        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/viaf.zip", "path": "viaf.zip", "type": "zip.bz2/json"}]
+    }
+
 }
