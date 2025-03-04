@@ -9,7 +9,6 @@
     
     "fetcherClass": "sources.geonames.fetcher.GnFetcher",
     "mapperClass": "sources.geonames.mapper.GnMapper",
-    "loaderClass": "sources.geonames.loader.GnLoader",
 
     "input_files": {
         "records": [

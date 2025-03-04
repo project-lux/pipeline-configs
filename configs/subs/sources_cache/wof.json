@@ -10,8 +10,13 @@
     "fetcherClass": "sources.wof.fetcher.WofFetcher",
     "mapperClass": "sources.wof.mapper.WofMapper",
 
-    "remoteDumpFile": "https://data.geocode.earth/wof/dist/sqlite/whosonfirst-data-admin-latest.db.bz2",
     "dumpFilePath": "wof/latest_wof.db",
-    "cycleBreakPath": "wof_cycle_breaks.json"
+    "cycleBreakPath": "wof_cycle_breaks.json",
 
+    "dumps_dir": "wof",
+    "input_files": {
+        "records": [
+            {"url": "https://data.geocode.earth/wof/dist/sqlite/whosonfirst-data-admin-latest.db.bz2", "path": "latest_wof.db.bz2"}
+        ]
+    }
 }
