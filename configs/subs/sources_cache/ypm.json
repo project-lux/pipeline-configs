@@ -14,7 +14,14 @@
     
     "mapperClass": "sources.yale.ypm.mapper.YpmMapper",
     "harvesterClass": "process.base.harvester.ASHarvester",
-    "loaderClass": "sources.yale.ypm.loader.YpmLoader",
-    "dumpFilePath": "ypm"
-
+    "loaderClass": "process.base.loader.Loader",
+    "dumps_dir": "ypm",
+    "input_files":  {
+        "records": [
+            {"url": "https://images.peabody.yale.edu/data/rob/agent.tar.gz", "path": "agent.tar.gz", "type": "tar.gz/json"},
+            {"url": "https://images.peabody.yale.edu/data/rob/object.tar.gz", "path": "object.tar.gz", "type": "tar.gz/json"},
+            {"url": "https://images.peabody.yale.edu/data/rob/place.tar.gz", "path": "place.tar.gz", "type": "tar.gz/json"},
+            {"url": "https://images.peabody.yale.edu/data/rob/taxon.tar.gz", "path": "taxon.tar.gz", "type": "tar.gz/json"}
+        ]
+    }
 }
