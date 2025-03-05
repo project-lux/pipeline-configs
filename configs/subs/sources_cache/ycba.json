@@ -10,10 +10,12 @@
     "merge_order": 1,
     
     "mapperClass": "sources.yale.ycba.mapper.YcbaMapper",
-    "loaderClass": "sources.yale.ycba.loader.YcbaLoader",
+    "loaderClass": "process.base.loader.Loader",
     "harvesterClass": "process.base.harvester.ASHarvester",
 
-    "dumpFilePath": "ycba/linked_art.tar.gz",
-    "totalRecords": 197711
-    
+    "totalRecords": 197711,
+    "dumps_dir": "ycba",
+    "input_files": {
+        "records": [{"url": "https://ycba-lux.s3.amazonaws.com/compressed/linked_art_012925.tar.gz", "path": "linked_art.tar.gz", "type": "tar.gz/json"}]
+    }
 }
