@@ -9,7 +9,6 @@
     "merge_order": 11,
 
     "totalRecords": 100000,
-    "input_files": {"records": [{"path":  "/Users/rs2668/Development/lux/data/input/ulan.zip", "type": "zip.bz2/json"}]},
     "loaderClass": "process.base.loader.Loader",
     
     "harvesterClass": "sources.getty.harvester.GettyHarvester",

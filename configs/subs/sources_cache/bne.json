@@ -14,10 +14,10 @@
 
     "input_files": {
         "records": [
-            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/entidad/entidad-JSON.zip"},
-            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/materia/materia-JSON.zip"},
-            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/geografico/geografico-JSON.zip"},
-            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/persona/persona-JSON.zip"}
+            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/entidad/entidad-JSON.zip", "type": "zip/arraylines/json"},
+            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/geografico/geografico-JSON.zip", "type": "zip/arraylines/json"},
+            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/persona/persona-JSON.zip", "type": "zip/arraylines/json"},
+            {"url": "https://www.bne.es/media/datosgob/catalogo-autoridades/materia/materia-JSON.zip", "type": "zip/array/json"}
         ],
         "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/bne.zip", "path": "bne.zip", "type": "zip.bz2/json"}]
     }

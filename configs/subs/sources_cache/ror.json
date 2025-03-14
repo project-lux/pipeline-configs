@@ -19,3 +19,4 @@
         "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/ror.zip", "path": "ror.zip", "type": "zip.bz2/json"}]
     }
 }
+
