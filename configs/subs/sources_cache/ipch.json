@@ -9,7 +9,7 @@
     "merge_order": 1,
     
     "mapperClass": "sources.yale.ipch.mapper.IpchMapper",
-    "loaderClass": "sources.yale.ipch.loader.IpchLoader",
+    "loaderClass": "process.base.loader.Loader",
     "harvesterClass": "process.base.harvester.ASHarvester",
 
     "dumpFilePath": "ipch/all_records.jsonl",
