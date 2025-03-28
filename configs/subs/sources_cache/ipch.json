@@ -12,7 +12,9 @@
     "loaderClass": "process.base.loader.Loader",
     "harvesterClass": "process.base.harvester.ASHarvester",
 
-    "dumpFilePath": "ipch/all_records.jsonl",
-    "totalRecords": 8500
-    
+    "totalRecords": 8500,
+    "dumps_dir": "ipch",
+    "input_files": {
+        "records": [{"path": "all_records.jsonl", "type": "lines/json"}]
+    }
 }
