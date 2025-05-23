@@ -4,17 +4,14 @@
   "namespace": "https://lux.collections.yale.edu/data/",
   "idmap_name": "idmap",
 
-  "differentDbPath": "global_diffs.lmdb",
-  "inverseEquivDbPath": "global_equivs.lmdb",
-
   "indexes": {
     "differents": {
-      "indexClass": "storage.index.LmdbIndex",
-      "path": "global_diff"
+      "indexClass": "storage.index.lmdb.LmdbIndex",
+      "path": "global_diffs.lmdb"
     },
     "equivalents": {
-      "indexClass": "storage.index.LmdbIndex",
-      "path": "global_equivs"
+      "indexClass": "storage.index.lmdb.LmdbIndex",
+      "path": "global_equivs.lmdb"
     }
   },
 
