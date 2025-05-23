@@ -3,15 +3,21 @@
     "type": "external",
     "namespace": "https://en.wikipedia.org/wiki/",
     "matches": ["wikipedia.org/wiki/"],
-    "fetch": "",
+    "fetch": "http://en.wikipedia.org/wiki/{identifier}",
     "merge_order": 99999,
     
-    "mapperClass": "sources.wikidata.mapper.WdMapper",
-    "loaderClass": "sources.wikidata.loader.WdLoader",
+    "mapperClass": "sources.wikipedia.mapper.WpMapper",
+    "loaderClass": "sources.wikipedia.loader.Loader",
 
     "totalRecords": 6000000,
     "dumps_dir": "wikipedia",
     "input_files": {
-        "records": [{"url": "", "path": "article-texts.json.gz", "type": "lines.gz/json"}],
+        "records": [
+            {
+                "url": "",
+                "path": "article-texts.json.gz",
+                "type": "lines.gz/json"
+            }
+        ]
     }
 }

@@ -1,24 +1,35 @@
 {
-    "name": "aat",
-    "type": "external",
-    "namespace": "http://vocab.getty.edu/aat/",
-    "matches": ["vocab.getty.edu/aat/"],
-    "fetch": "https://vocab.getty.edu/aat/{identifier}.jsonld",
-    "activitystreams": ["https://data.getty.edu/vocab/activity-stream"],
-    "wikidata_property": ["P1014"],
-    "merge_order": 10,
-    
-    "harvesterClass": "sources.getty.harvester.GettyHarvester",
-    "mapperClass": "sources.getty.mapper.AatMapper",
-    "indexLoaderClass": "process.base.index_loader.IndexLoader",
-    "reconcilerClass": "sources.getty.reconciler.AatReconciler",
+  "name": "aat",
+  "type": "external",
+  "namespace": "http://vocab.getty.edu/aat/",
+  "matches": ["vocab.getty.edu/aat/"],
+  "fetch": "https://vocab.getty.edu/aat/{identifier}.jsonld",
+  "activitystreams": ["https://data.getty.edu/vocab/activity-stream"],
+  "wikidata_property": ["P1014"],
+  "merge_order": 10,
 
-    "reconcileDbPath": "label_to_aat.lmdb",
-    "cycleBreakPath": "aat_cycle_breaks.json",
+  "harvesterClass": "sources.getty.harvester.GettyHarvester",
+  "mapperClass": "sources.getty.mapper.AatMapper",
+  "indexLoaderClass": "process.base.index_loader.IndexLoader",
+  "reconcilerClass": "sources.getty.reconciler.AatReconciler",
 
-    "dumps_dir": "aat",
-    "input_files": {
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/aat.zip", "path": "aat.zip", "type": "zip.bz2/json"}]
+  "indexes": {
+    "reconcile_labels": {
+      "path": "label_to_aat.lmdb",
+      "indexClass": "storage.index.lmdb.LmdbIndex"
     }
-    
+  },
+
+  "cycleBreakPath": "aat_cycle_breaks.json",
+
+  "dumps_dir": "aat",
+  "input_files": {
+    "export": [
+      {
+        "url": "https://yale-lux-data.s3.amazonaws.com/sources/aat.zip",
+        "path": "aat.zip",
+        "type": "zip.bz2/json"
+      }
+    ]
+  }
 }

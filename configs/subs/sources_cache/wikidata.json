@@ -1,25 +1,42 @@
 {
-    "name": "wikidata",
-    "type": "external",
-    "namespace": "http://www.wikidata.org/entity/",
-    "matches": ["wikidata.org/entity/", "wikidata.org/wiki/"],
-    "fetch": "https://www.wikidata.org/wiki/Special:EntityData/{identifier}.json",
-    "merge_order": 50,
-    
-    "fetcherClass": "sources.wikidata.fetcher.WdFetcher",
-    "mapperClass": "sources.wikidata.mapper.WdMapper",
-    "loaderClass": "sources.wikidata.loader.WdLoader",
-    "indexLoaderClass": "sources.wikidata.index_loader.WdFileIndexLoader",
-    "reconcilerClass": "sources.wikidata.reconciler.WdReconciler",
-    "downloaderClass": "process.base.downloader.BaseDownloader",
+  "name": "wikidata",
+  "type": "external",
+  "namespace": "http://www.wikidata.org/entity/",
+  "matches": ["wikidata.org/entity/", "wikidata.org/wiki/"],
+  "fetch": "https://www.wikidata.org/wiki/Special:EntityData/{identifier}.json",
+  "merge_order": 50,
 
-    "inverseEquivDbPath": "id_to_wikidata.lmdb",
-    "cycleBreakPath": "wikidata_cycle_breaks.json",
-    "totalRecords": 100000000,
-    "dumps_dir": "wikidata",
-    "input_files": {
-        "records": [{"url": "https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz", "path": "latest-all.json.gz", "type": "arraylines.gz/json"}],
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/wikidata.zip", "path": "wikidata.zip", "type": "zip.bz2/json"}]
+  "fetcherClass": "sources.wikidata.fetcher.WdFetcher",
+  "mapperClass": "sources.wikidata.mapper.WdMapper",
+  "loaderClass": "sources.wikidata.loader.WdLoader",
+  "indexLoaderClass": "sources.wikidata.index_loader.WdFileIndexLoader",
+  "reconcilerClass": "sources.wikidata.reconciler.WdReconciler",
+  "downloaderClass": "process.base.downloader.BaseDownloader",
+
+  "indexes": {
+    "reconcile_ids": {
+      "indexClass": "storage.index.lmdb.LmdbIndex",
+      "path": "id_to_wikidata.lmdb"
     }
-}
+  },
 
+  "cycleBreakPath": "wikidata_cycle_breaks.json",
+  "totalRecords": 100000000,
+  "dumps_dir": "wikidata",
+  "input_files": {
+    "records": [
+      {
+        "url": "https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz",
+        "path": "latest-all.json.gz",
+        "type": "arraylines.gz/json"
+      }
+    ],
+    "export": [
+      {
+        "url": "https://yale-lux-data.s3.amazonaws.com/sources/wikidata.zip",
+        "path": "wikidata.zip",
+        "type": "zip.bz2/json"
+      }
+    ]
+  }
+}

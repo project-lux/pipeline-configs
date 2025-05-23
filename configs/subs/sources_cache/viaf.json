@@ -1,31 +1,42 @@
 {
-	"name": "viaf",
-	"type": "external",
-	"namespace": "http://viaf.org/viaf/",
-	"matches": ["viaf.org/viaf/"],
-	"fetch": "https://viaf.org/viaf/{identifier}/viaf.xml",
-        "wikidata_property": ["P214"],
-        "merge_order": 70,
-    "mapSizeExponent": 32,
-    
-	"fetcherClass": "sources.viaf.fetcher.ViafFetcher",
-	"mapperClass": "sources.viaf.mapper.ViafMapper",
-	"loaderClass": "sources.viaf.loader.ViafLoader",
-	"indexLoaderClass": "sources.viaf.index_loader.ViafIndexLoader",
-	"reconcilerClass": "sources.viaf.reconciler.ViafReconciler",
+  "name": "viaf",
+  "type": "external",
+  "namespace": "http://viaf.org/viaf/",
+  "matches": ["viaf.org/viaf/"],
+  "fetch": "https://viaf.org/viaf/{identifier}/viaf.xml",
+  "wikidata_property": ["P214"],
+  "merge_order": 70,
+  "mapSizeExponent": 32,
 
-    "inverseEquivDbPath": "id_to_viaf.lmdb",        
-	"reconcileDumpPath": "viaf/viaf-links.txt.gz",
-    "dumpFilePath": "viaf/viaf-clusters.xml.gz",
+  "fetcherClass": "sources.viaf.fetcher.ViafFetcher",
+  "mapperClass": "sources.viaf.mapper.ViafMapper",
+  "loaderClass": "sources.viaf.loader.ViafLoader",
+  "indexLoaderClass": "sources.viaf.index_loader.ViafIndexLoader",
+  "reconcilerClass": "sources.viaf.reconciler.ViafReconciler",
 
-    "dumps_dir": "viaf",
-    "downloaderClass": "sources.viaf.downloader.ViafDownloader",
-    "downloadMdUrl": "https://viaf.org/api/download/files",
-    "downloadXPath": "queryResult/Monthly/clusterRdfXml",
-    "downloadUrlBase": "https://downloads.viaf.org/viaf/data/monthly/",
-
-    "input_files": {
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/viaf.zip", "path": "viaf.zip", "type": "zip.bz2/json"}]
+  "indexes": {
+    "reconcile_ids": {
+      "indexClass": "storage.index.lmdb.LmdbIndex",
+      "path": "id_to_viaf.lmdb"
     }
+  },
 
+  "reconcileDumpPath": "viaf/viaf-links.txt.gz",
+  "dumpFilePath": "viaf/viaf-clusters.xml.gz",
+
+  "dumps_dir": "viaf",
+  "downloaderClass": "sources.viaf.downloader.ViafDownloader",
+  "downloadMdUrl": "https://viaf.org/api/download/files",
+  "downloadXPath": "queryResult/Monthly/clusterRdfXml",
+  "downloadUrlBase": "https://downloads.viaf.org/viaf/data/monthly/",
+
+  "input_files": {
+    "export": [
+      {
+        "url": "https://yale-lux-data.s3.amazonaws.com/sources/viaf.zip",
+        "path": "viaf.zip",
+        "type": "zip.bz2/json"
+      }
+    ]
+  }
 }

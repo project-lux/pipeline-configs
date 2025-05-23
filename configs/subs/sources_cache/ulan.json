@@ -1,25 +1,36 @@
 {
-    "name": "ulan",
-    "type": "external",
-    "namespace": "http://vocab.getty.edu/ulan/",
-    "matches": ["vocab.getty.edu/ulan/"],
-    "fetch": "https://vocab.getty.edu/ulan/{identifier}.jsonld",
-    "activitystreams": ["https://data.getty.edu/vocab/activity-stream"],
-    "wikidata_property": ["P245"],
-    "merge_order": 11,
+  "name": "ulan",
+  "type": "external",
+  "namespace": "http://vocab.getty.edu/ulan/",
+  "matches": ["vocab.getty.edu/ulan/"],
+  "fetch": "https://vocab.getty.edu/ulan/{identifier}.jsonld",
+  "activitystreams": ["https://data.getty.edu/vocab/activity-stream"],
+  "wikidata_property": ["P245"],
+  "merge_order": 11,
 
-    "totalRecords": 100000,
-    "loaderClass": "process.base.loader.Loader",
-    
-    "harvesterClass": "sources.getty.harvester.GettyHarvester",
-    "mapperClass": "sources.getty.mapper.UlanMapper",
-    "indexLoaderClass": "process.base.index_loader.IndexLoader",
-    "reconcilerClass": "sources.getty.reconciler.UlanReconciler",
-    
-    "reconcileDbPath": "label_to_ulan.lmdb",
-    "dumps_dir": "ulan",
-    "input_files": {
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/ulan.zip", "path": "ulan.zip", "type": "zip.bz2/json"}]
+  "totalRecords": 100000,
+  "loaderClass": "process.base.loader.Loader",
+
+  "harvesterClass": "sources.getty.harvester.GettyHarvester",
+  "mapperClass": "sources.getty.mapper.UlanMapper",
+  "indexLoaderClass": "process.base.index_loader.IndexLoader",
+  "reconcilerClass": "sources.getty.reconciler.UlanReconciler",
+
+  "indexes": {
+    "reconcile_labels": {
+      "indexClass": "storage.index.lmdb.LmdbIndex",
+      "path": "label_to_ulan.lmdb"
     }
+  },
 
+  "dumps_dir": "ulan",
+  "input_files": {
+    "export": [
+      {
+        "url": "https://yale-lux-data.s3.amazonaws.com/sources/ulan.zip",
+        "path": "ulan.zip",
+        "type": "zip.bz2/json"
+      }
+    ]
+  }
 }
