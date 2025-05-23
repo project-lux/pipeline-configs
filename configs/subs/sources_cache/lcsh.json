@@ -23,11 +23,11 @@
 
   "indexes": {
     "reconcile_labels": {
-      "indexClass": "storage.index.LmdbIndex",
+      "indexClass": "storage.index.lmdb.LmdbIndex",
       "path": "label_to_lcsh.lmdb"
     },
     "reconcile_ids": {
-      "indexClass": "storage.index.LmdbIndex",
+      "indexClass": "storage.index.lmdb.LmdbIndex",
       "path": "id_to_lcsh.lmdb"
     }
   },
