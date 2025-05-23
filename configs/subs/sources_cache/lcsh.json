@@ -1,34 +1,50 @@
 {
-    "name": "lcsh",
-    "type": "external",
-    "namespace": "http://id.loc.gov/authorities/subjects/",
-    "matches": ["id.loc.gov/authorities/subjects/"],
-    "fetch": "http://id.loc.gov/authorities/subjects/{identifier}.json",
-    "wikidata_property": ["P244"],
-    "merge_order": 22,
-    
-    "fetcherClass": "sources.lc.fetcher.LcshFetcher",
-    "mapperClass": "sources.lc.mapper.LcshMapper",
-    "loaderClass": "sources.lc.loader.LcLoader",
-    "indexLoaderClass": "sources.lc.index_loader.LCIndexLoader",
-    "reconcilerClass": "sources.lc.reconciler.LcshReconciler",
-    "reconcileDbPath": "label_to_lcsh.lmdb",
-    "inverseEquivDbPath": "id_to_lcsh.lmdb",
-    "dumpFilePath": "lcsh/subjects.madsrdf.jsonld.gz",
-    "externalLinksPath": "lcsh/external_links.nt",
-    "cycleBreakPath": "lcsh_cycle_breaks.json",
-    
-    "totalRecords": 450000,
-    "dumps_dir": "lcsh",
-    "input_files": {
-        "records": [
-            {"url": "https://lds-downloads.s3.amazonaws.com/authorities/subjects.madsrdf.jsonld.gz"}
-        ],
-        "links": [
-            {"url": "https://id.loc.gov/download/externallinks.nt.zip"}
-        ],
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/lcsh.zip", "path": "lcsh.zip", "type": "zip.bz2/json"}]
+  "name": "lcsh",
+  "type": "external",
+  "namespace": "http://id.loc.gov/authorities/subjects/",
+  "matches": ["id.loc.gov/authorities/subjects/"],
+  "fetch": "http://id.loc.gov/authorities/subjects/{identifier}.json",
+  "wikidata_property": ["P244"],
+  "merge_order": 22,
+
+  "fetcherClass": "sources.lc.fetcher.LcshFetcher",
+  "mapperClass": "sources.lc.mapper.LcshMapper",
+  "loaderClass": "sources.lc.loader.LcLoader",
+  "indexLoaderClass": "sources.lc.index_loader.LCIndexLoader",
+  "reconcilerClass": "sources.lc.reconciler.LcshReconciler",
+  "reconcileDbPath": "label_to_lcsh.lmdb",
+  "inverseEquivDbPath": "id_to_lcsh.lmdb",
+  "dumpFilePath": "lcsh/subjects.madsrdf.jsonld.gz",
+  "externalLinksPath": "lcsh/external_links.nt",
+  "cycleBreakPath": "lcsh_cycle_breaks.json",
+
+  "totalRecords": 450000,
+  "dumps_dir": "lcsh",
+
+  "indexes": {
+    "reconcile_labels": {
+      "indexClass": "storage.index.LmdbIndex",
+      "path": "label_to_lcsh.lmdb"
+    },
+    "reconcile_ids": {
+      "indexClass": "storage.index.LmdbIndex",
+      "path": "id_to_lcsh.lmdb"
     }
+  },
 
-
+  "input_files": {
+    "records": [
+      {
+        "url": "https://lds-downloads.s3.amazonaws.com/authorities/subjects.madsrdf.jsonld.gz"
+      }
+    ],
+    "links": [{ "url": "https://id.loc.gov/download/externallinks.nt.zip" }],
+    "export": [
+      {
+        "url": "https://yale-lux-data.s3.amazonaws.com/sources/lcsh.zip",
+        "path": "lcsh.zip",
+        "type": "zip.bz2/json"
+      }
+    ]
+  }
 }

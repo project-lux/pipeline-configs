@@ -1,0 +1,17 @@
+{
+    "name": "wikipedia",
+    "type": "external",
+    "namespace": "https://en.wikipedia.org/wiki/",
+    "matches": ["wikipedia.org/wiki/"],
+    "fetch": "",
+    "merge_order": 99999,
+    
+    "mapperClass": "sources.wikidata.mapper.WdMapper",
+    "loaderClass": "sources.wikidata.loader.WdLoader",
+
+    "totalRecords": 6000000,
+    "dumps_dir": "wikipedia",
+    "input_files": {
+        "records": [{"url": "", "path": "article-texts.json.gz", "type": "lines.gz/json"}],
+    }
+}

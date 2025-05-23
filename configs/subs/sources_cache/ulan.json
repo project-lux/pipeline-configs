@@ -13,7 +13,7 @@
     
     "harvesterClass": "sources.getty.harvester.GettyHarvester",
     "mapperClass": "sources.getty.mapper.UlanMapper",
-    "indexLoaderClass": "process.base.index_loader.LmdbIndexLoader",
+    "indexLoaderClass": "process.base.index_loader.IndexLoader",
     "reconcilerClass": "sources.getty.reconciler.UlanReconciler",
     
     "reconcileDbPath": "label_to_ulan.lmdb",

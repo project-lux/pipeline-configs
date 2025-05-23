@@ -10,7 +10,7 @@
     
     "harvesterClass": "sources.getty.harvester.GettyHarvester",
     "mapperClass": "sources.getty.mapper.AatMapper",
-    "indexLoaderClass": "process.base.index_loader.LmdbIndexLoader",
+    "indexLoaderClass": "process.base.index_loader.IndexLoader",
     "reconcilerClass": "sources.getty.reconciler.AatReconciler",
 
     "reconcileDbPath": "label_to_aat.lmdb",
