@@ -9,6 +9,7 @@
 
   "fetcherClass": "sources.bnf.fetcher.BnfXmlFetcher",
   "mapperClass": "sources.bnf.mapper.BnfXmlMapper",
+  "loaderClass": "sources.bnf.loader.BnfLoader",
   "cycleBreakPath": "bnf_cycle_breaks.json",
   "dumps_dir": "bnf",
 
