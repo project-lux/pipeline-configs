@@ -35,7 +35,9 @@
   "input_files": {
     "records": [
       {
-        "url": "https://lds-downloads.s3.amazonaws.com/authorities/names.madsrdf.jsonld.gz"
+        "url": "https://lds-downloads.s3.amazonaws.com/authorities/names.madsrdf.jsonld.gz",
+        "path": "names.madsrdf.jsonld.gz",
+        "type": "lines.gz/json"
       }
     ],
     "links": [{ "url": "https://id.loc.gov/download/externallinks.nt.zip" }],
