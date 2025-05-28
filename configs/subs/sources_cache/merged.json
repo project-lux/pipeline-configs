@@ -9,7 +9,7 @@
       "indexClass": "storage.index.lmdb.LmdbIndex",
       "path": "global_diffs.lmdb"
     },
-    "equivalents": {
+    "reconcile_id": {
       "indexClass": "storage.index.lmdb.LmdbIndex",
       "path": "global_equivs.lmdb"
     }
