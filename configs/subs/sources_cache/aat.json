@@ -9,7 +9,8 @@
   "wikidata_property": ["P1014"],
   "merge_order": 10,
 
-  "harvesterClass": "sources.getty.harvester.GettyHarvester",
+  "harvesterClass": "process.base.harvester.ASHarvester",
+  "harvestProtocolClass": "sources.getty.harvester.GettyProtocol",
   "mapperClass": "sources.getty.mapper.AatMapper",
   "indexLoaderClass": "process.base.index_loader.IndexLoader",
   "reconcilerClass": "sources.getty.reconciler.AatReconciler",
