@@ -1,21 +1,27 @@
 {
-    "name": "tgn",
-    "type": "external",
-    "namespace": "http://vocab.getty.edu/tgn/",
-    "matches": ["vocab.getty.edu/tgn/"],
-    "fetch": "https://data.getty.edu/vocab/tgn/{identifier}",
-    "activitystreams": ["https://data.getty.edu/vocab/activity-stream"],
-    "wikidata_property": ["P1667"],
-    "merge_order": 12,
-    
-    "fetcherClass": "sources.getty.fetcher.GettyFetcher",
-    "harvesterClass": "sources.getty.harvester.GettyHarvester",
-    "mapperClass": "sources.getty.mapper.TgnMapper",
-    "cycleBreakPath": "tgn_cycle_breaks.json",
+  "name": "tgn",
+  "type": "external",
+  "namespace": "http://vocab.getty.edu/tgn/",
+  "matches": ["vocab.getty.edu/tgn/"],
+  "fetch": "https://data.getty.edu/vocab/tgn/{identifier}",
+  "activitystreams": ["https://data.getty.edu/vocab/activity-stream"],
+  "activitystreams_cache_source": "activitystreams",
+  "wikidata_property": ["P1667"],
+  "merge_order": 12,
 
-    "dumps_dir": "tgn",
-    "input_files": {
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/tgn.zip", "path": "tgn.zip", "type": "zip.bz2/json"}]
-    }
+  "fetcherClass": "sources.getty.fetcher.GettyFetcher",
+  "harvesterClass": "sources.getty.harvester.GettyHarvester",
+  "mapperClass": "sources.getty.mapper.TgnMapper",
+  "cycleBreakPath": "tgn_cycle_breaks.json",
 
+  "dumps_dir": "tgn",
+  "input_files": {
+    "export": [
+      {
+        "url": "https://yale-lux-data.s3.amazonaws.com/sources/tgn.zip",
+        "path": "tgn.zip",
+        "type": "zip.bz2/json"
+      }
+    ]
+  }
 }

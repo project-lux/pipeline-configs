@@ -5,6 +5,7 @@
   "matches": ["vocab.getty.edu/ulan/"],
   "fetch": "https://vocab.getty.edu/ulan/{identifier}.jsonld",
   "activitystreams": ["https://data.getty.edu/vocab/activity-stream"],
+  "activitystreams_cache_source": "activitystreams",
   "wikidata_property": ["P245"],
   "merge_order": 11,
 
