@@ -10,7 +10,8 @@
   "merge_order": 12,
 
   "fetcherClass": "sources.getty.fetcher.GettyFetcher",
-  "harvesterClass": "sources.getty.harvester.GettyHarvester",
+  "harvesterClass": "process.base.harvester.ASHarvester",
+  "harvestProtocolClass": "sources.getty.harvester.GettyProtocol",
   "mapperClass": "sources.getty.mapper.TgnMapper",
   "cycleBreakPath": "tgn_cycle_breaks.json",
 

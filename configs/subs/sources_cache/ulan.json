@@ -12,7 +12,8 @@
   "totalRecords": 100000,
   "loaderClass": "process.base.loader.Loader",
 
-  "harvesterClass": "sources.getty.harvester.GettyHarvester",
+  "harvesterClass": "process.base.harvester.ASHarvester",
+  "harvestProtocolClass": "sources.getty.harvester.GettyProtocol",
   "mapperClass": "sources.getty.mapper.UlanMapper",
   "indexLoaderClass": "process.base.index_loader.IndexLoader",
   "reconcilerClass": "sources.getty.reconciler.UlanReconciler",
