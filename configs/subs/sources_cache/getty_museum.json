@@ -8,6 +8,9 @@
     "https://data.getty.edu/museum/collection/activity-stream"
   ],
   "activitystreams_cache_source": "activitystreams",
+  "harvesterClass": "process.base.harvester.ASHarvester",
+  "harvestProtocolClass": "sources.getty.harvester.GettyProtocol",
+
   "wikidata_property": [],
   "merge_order": 98
 }
