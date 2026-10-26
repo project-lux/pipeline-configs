@@ -2,51 +2,34 @@
   "name": "lcnaf",
   "type": "external",
   "namespace": "http://id.loc.gov/authorities/names/",
-  "matches": ["id.loc.gov/authorities/names/"],
+  "matches": [
+    "id.loc.gov/authorities/names/"
+  ],
   "fetch": "http://id.loc.gov/authorities/names/{identifier}.json",
-  "wikidata_property": ["P244"],
+  "wikidata_property": [
+    "P244"
+  ],
   "merge_order": 22,
   "mapSizeExponent": 32,
-
   "fetcherClass": "sources.lc.fetcher.LcnafFetcher",
   "mapperClass": "sources.lc.mapper.LcnafMapper",
   "loaderClass": "sources.lc.loader.LcLoader",
   "indexLoaderClass": "sources.lc.index_loader.LCIndexLoader",
   "reconcilerClass": "sources.lc.reconciler.LcnafReconciler",
-
   "dumpFilePath": "lcnaf/names.madsrdf.jsonld.gz",
   "externalLinksPath": "lcsh/external_links.nt",
   "cycleBreakPath": "lcnaf_cycle_breaks.json",
-
   "indexes": {
-    "reconcile_labels": {
-      "indexClass": "storage.index.lmdb.LmdbIndex",
+    "reconcile_label": {
+      "indexClass": "storage.idmap.lmdb.TabLmdb",
       "path": "label_to_lcnaf.lmdb"
     },
-    "reconcile_ids": {
-      "indexClass": "storage.index.lmdb.LmdbIndex",
+    "reconcile_id": {
+      "indexClass": "storage.idmap.lmdb.TabLmdb",
       "path": "id_to_lcnaf.lmdb"
     }
   },
-
   "totalRecords": 11000000,
-
   "dumps_dir": "lcnaf",
-  "input_files": {
-    "records": [
-      {
-        "url": "https://lds-downloads.s3.amazonaws.com/authorities/names.madsrdf.jsonld.gz",
-        "path": "names.madsrdf.jsonld.gz",
-        "type": "lines.gz/json"
-      }
-    ],
-    "links": [{ "url": "https://id.loc.gov/download/externallinks.nt.zip" }],
-    "export": [
-      {
-        "url": "https://yale-lux-data.s3.amazonaws.com/sources/lcnaf.zip",
-        "path": "lcnaf.zip",
-        "type": "zip.bz2/json"
-      }
-    ]
-  }
+  "remoteDumpFile": "https://lds-downloads.s3.amazonaws.com/authorities/names.madsrdf.jsonld.gz"
 }

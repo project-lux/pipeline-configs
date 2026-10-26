@@ -3,18 +3,16 @@
   "type": "results",
   "namespace": "https://lux.collections.yale.edu/data/",
   "idmap_name": "idmap",
-
   "indexes": {
     "differents": {
-      "indexClass": "storage.index.lmdb.LmdbIndex",
+      "indexClass": "storage.idmap.lmdb.TabLmdb",
       "path": "global_diffs.lmdb"
     },
     "reconcile_id": {
-      "indexClass": "storage.index.lmdb.LmdbIndex",
+      "indexClass": "storage.idmap.lmdb.TabLmdb",
       "path": "global_equivs.lmdb"
     }
   },
-
   "recordcacheClass": "storage.cache.postgres.MergedRecordCache",
   "mapperClass": "sources.lux.final.mapper.Cleaner",
   "reconcilerClass": "sources.lux.final.reconciler.GlobalReconciler",

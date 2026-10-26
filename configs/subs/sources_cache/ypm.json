@@ -3,7 +3,9 @@
   "type": "internal",
   "namespace": "https://images.peabody.yale.edu/data/",
   "fetch": "https://images.peabody.yale.edu/data/{identifier}",
-  "matches": ["images.peabody.yale.edu/data/"],
+  "matches": [
+    "images.peabody.yale.edu/data/"
+  ],
   "activitystreams": [
     "https://images.peabody.yale.edu/data/agent/ypm-as-agent.json",
     "https://images.peabody.yale.edu/data/place/ypm-as-place.json",
@@ -12,10 +14,9 @@
   ],
   "activitystreams_cache_source": "activitystreams",
   "merge_order": 3,
-
   "mapperClass": "sources.yale.ypm.mapper.YpmMapper",
   "harvesterClass": "process.base.harvester.ASHarvester",
-  "loaderClass": "process.base.loader.Loader",
+  "loaderClass": "sources.yale.ypm.loader.YpmLoader",
   "dumps_dir": "ypm",
   "input_files": {
     "records": [
