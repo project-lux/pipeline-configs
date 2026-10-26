@@ -1,22 +1,30 @@
 {
-    "name": "ror",
-    "type": "external",
-    "namespace": "https://ror.org/",
-    "matches": ["/ror.org/"],
-    "fetch": "https://api.ror.org/organizations/{identifier}",
-    "wikidata_property": ["P6782"],
-    "merge_order": 99,
-    "loaderClass": "sources.ror.loader.RorLoader",
-    "mapperClass": "sources.ror.mapper.RorMapper",
-
-    "dumpFilePath": "ror/ror-data.zip",
-    "downloaderClass": "sources.ror.downloader.RorDownloader",
-    "downloadMdUrl": "https://zenodo.org/api/records/14429114/versions?size=5&sort=version&allversions=true",
-    "downloadXPath": "hits/hits[0]/files[0]/links/self",
-
-    "dumps_dir": "ror",
-    "input_files": {
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/ror.zip", "path": "ror.zip", "type": "zip.bz2/json"}]
-    }
+  "name": "ror",
+  "type": "external",
+  "namespace": "https://ror.org/",
+  "matches": [
+    "/ror.org/"
+  ],
+  "fetch": "https://api.ror.org/organizations/{identifier}",
+  "wikidata_property": [
+    "P6782"
+  ],
+  "merge_order": 99,
+  "loaderClass": "sources.ror.loader.RorLoader",
+  "mapperClass": "sources.ror.mapper.RorMapper",
+  "dumpFilePath": "ror/ror-data.zip",
+  "downloaderClass": "sources.ror.downloader.RorDownloader",
+  "downloadMdUrl": "https://zenodo.org/api/records/6347574",
+  "downloadXPath": "files[0]/links/self",
+  "dumps_dir": "ror",
+  "input_files": {
+    "export": [
+      {
+        "url": "https://yale-lux-data.s3.amazonaws.com/sources/ror.zip",
+        "path": "ror.zip",
+        "type": "zip.bz2/json"
+      }
+    ]
+  },
+  "dumpFileType": "zip/array/raw"
 }
-

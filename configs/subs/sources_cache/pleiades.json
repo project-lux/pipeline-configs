@@ -2,24 +2,27 @@
   "name": "pleiades",
   "type": "external",
   "namespace": "https://pleiades.stoa.org/places/",
-  "matches": ["pleiades.stoa.org"],
+  "matches": [
+    "pleiades.stoa.org"
+  ],
   "fetch": "https://pleiades.stoa.org/places/{identifier}/json",
-  "wikidata_property": ["P1584"],
+  "wikidata_property": [
+    "P1584"
+  ],
   "merge_order": 100,
-
   "mapperClass": "sources.pleiades.mapper.PleiadesMapper",
-
   "dumps_dir": "pleiades",
-
   "input_files": {
     "records": [
       {
         "url": "https://atlantides.org/downloads/pleiades/rdf/place-types.ttl",
-        "type": "zip/arraylines/json"
+        "path": "place-types.ttl",
+        "type": "ttl/other"
       },
       {
         "url": "https://atlantides.org/downloads/pleiades/json/pleiades-places-latest.json.gz",
-        "type": "zip/arraylines/json"
+        "path": "pleiades-places-latest.json.gz",
+        "type": "graph.gz/raw"
       }
     ],
     "export": [
@@ -34,5 +37,7 @@
         "type": "zip.bz2/json"
       }
     ]
-  }
+  },
+  "loaderClass": "sources.pleiades.loader.PleiadesLoader",
+  "downloaderClass": "sources.pleiades.downloader.PleiadesDownloader"
 }

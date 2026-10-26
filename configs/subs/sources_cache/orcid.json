@@ -1,20 +1,18 @@
 {
-    "name": "orcid",
-    "type": "external",
-    "namespace": "https://orcid.org/",
-    "matches": ["/orcid.org/"],
-    "fetch": "http://orcid.org/{identifier}",
-    "wikidata_property": ["P496"],
-    "merge_order": 102,
-
-    "loaderClass": "sources.orcid.loader.OrcidLoader",
-    "mapperClass": "sources.orcid.mapper.OrcidMapper",
-
-    "dumps_dir": "orcid",
-    "input_files": {
-        "records": [
-            {"url": "https://orcid.figshare.com/ndownloader/files/49560102", "path": "orcid-summaries.tar.gz"}
-        ],
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/orcid.zip", "path": "orcid.zip", "type": "zip.bz2/json"}]
-    }
+  "name": "orcid",
+  "type": "external",
+  "namespace": "https://orcid.org/",
+  "matches": [
+    "/orcid.org/"
+  ],
+  "fetch": "http://orcid.org/{identifier}",
+  "wikidata_property": [
+    "P496"
+  ],
+  "merge_order": 102,
+  "loaderClass": "sources.orcid.loader.OrcidLoader",
+  "mapperClass": "sources.orcid.mapper.OrcidMapper",
+  "dumps_dir": "orcid",
+  "remoteDumpFile": "https://orcid.figshare.com/ndownloader/files/49560102",
+  "dumpFilePath": "orcid/orcid-summaries.tar.gz"
 }

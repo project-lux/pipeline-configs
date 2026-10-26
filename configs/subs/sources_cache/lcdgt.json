@@ -1,20 +1,16 @@
 {
-    "name": "lcdgt",
-    "type": "external",
-    "namespace": "http://id.loc.gov/authorities/demographicTerms/",
-    "matches": ["id.loc.gov/authorities/demographicTerms/"],
-    "fetch": "http://id.loc.gov/authorities/demographicTerms/{identifier}.json",
-    "merge_order": 25,
-    
-    "fetcherClass": "sources.lc.fetcher.LcdgtFetcher",
-    "mapperClass": "sources.lc.mapper.LcnafMapper",
-
-    "totalRecords": 1830,
-
-    "dumps_dir": "lcdgt",
-    "input_records": {
-        "records": [
-            {"url": "http://id.loc.gov/download/authorities/demographicTerms.madsrdf.jsonld.gz"}
-        ]
-    }
+  "name": "lcdgt",
+  "type": "external",
+  "namespace": "http://id.loc.gov/authorities/demographicTerms/",
+  "matches": [
+    "id.loc.gov/authorities/demographicTerms/"
+  ],
+  "fetch": "http://id.loc.gov/authorities/demographicTerms/{identifier}.json",
+  "merge_order": 25,
+  "fetcherClass": "sources.lc.fetcher.LcdgtFetcher",
+  "mapperClass": "sources.lc.mapper.LcnafMapper",
+  "totalRecords": 1830,
+  "dumps_dir": "lcdgt",
+  "remoteDumpFile": "http://id.loc.gov/download/authorities/demographicTerms.madsrdf.jsonld.gz",
+  "dumpFilePath": "lcdgt/demographicTerms.madsrdf.jsonld.gz"
 }

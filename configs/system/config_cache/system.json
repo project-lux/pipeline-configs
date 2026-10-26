@@ -1,18 +1,20 @@
 {
   "type": "system",
-
   "allow_network": false,
   "debug_reconciliation": false,
   "max_distance": 3,
   "reconcile_min_equivs": 3,
   "idmap_name": "idmap",
-
-  "subconfigs": ["sources", "maps", "mls"],
-
+  "subconfigs": [
+    "sources",
+    "maps",
+    "mls"
+  ],
   "internal_uri": "https://lux.collections.yale.edu/data/",
-
-  "do_not_reidentify": ["/creativecommons.org/", "/rightsstatements.org/"],
-
+  "do_not_reidentify": [
+    "/creativecommons.org/",
+    "/rightsstatements.org/"
+  ],
   "ok_record_types": {
     "HumanMadeObject": "object",
     "Type": "concept",
@@ -37,7 +39,6 @@
     "Currency": "Type",
     "MeasurementUnit": "Type"
   },
-
   "reconcile_record_types": [
     "Person",
     "Group",
@@ -51,7 +52,6 @@
     "Event",
     "Activity"
   ],
-
   "base_dir": "path-to-where-files-should-live",
   "indexes_dir": "indexes",
   "dumps_dir": "input",
@@ -60,14 +60,16 @@
   "log_dir": "logs",
   "tests_dir": "tests",
   "temp_dir": "temp",
-
   "path_types": {
     "reconcileDumpPath": "dumps_dir",
     "dumpFilePath": "dumps_dir",
     "exportPath": "exports_dir",
-    "cycleBreakPath": "data_dir"
+    "cycleBreakPath": "data_dir",
+    "reconcileDbPath": "indexes_dir",
+    "inverseEquivDbPath": "indexes_dir",
+    "differentDbPath": "indexes_dir",
+    "headingsPath": "indexes_dir"
   },
-
   "other_external_matches": [
     "libris.kb.se/",
     "n2t.net/ark:/99166/",
@@ -79,9 +81,11 @@
     "creativecommons.org",
     "rightsstatements.org"
   ],
-
   "external_uri_rewrites": {
     "http://isni-url.oclc.nl/isni/": "http://isni.org/isni/",
     "http://orcid.org/": "https://orcid.org/"
-  }
+  },
+  "validatorClass": "lux_pipeline.process.validator.Validator",
+  "validate_allow_underscore_properties": true,
+  "activitystreams_cache_source": "activitystreams"
 }

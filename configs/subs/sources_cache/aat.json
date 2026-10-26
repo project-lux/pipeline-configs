@@ -2,28 +2,30 @@
   "name": "aat",
   "type": "external",
   "namespace": "http://vocab.getty.edu/aat/",
-  "matches": ["vocab.getty.edu/aat/"],
+  "matches": [
+    "vocab.getty.edu/aat/"
+  ],
   "fetch": "https://vocab.getty.edu/aat/{identifier}.jsonld",
-  "activitystreams": ["https://data.getty.edu/vocab/activity-stream"],
+  "activitystreams": [
+    "https://data.getty.edu/vocab/activity-stream"
+  ],
   "activitystreams_cache_source": "activitystreams",
-  "wikidata_property": ["P1014"],
+  "wikidata_property": [
+    "P1014"
+  ],
   "merge_order": 10,
-
   "harvesterClass": "process.base.harvester.ASHarvester",
   "harvestProtocolClass": "sources.getty.harvester.GettyProtocol",
   "mapperClass": "sources.getty.mapper.AatMapper",
-  "indexLoaderClass": "process.base.index_loader.IndexLoader",
+  "indexLoaderClass": "process.base.index_loader.LmdbIndexLoader",
   "reconcilerClass": "sources.getty.reconciler.AatReconciler",
-
   "indexes": {
-    "reconcile_labels": {
+    "reconcile_label": {
       "path": "label_to_aat.lmdb",
-      "indexClass": "storage.index.lmdb.LmdbIndex"
+      "indexClass": "storage.idmap.lmdb.TabLmdb"
     }
   },
-
   "cycleBreakPath": "aat_cycle_breaks.json",
-
   "dumps_dir": "aat",
   "input_files": {
     "export": [
