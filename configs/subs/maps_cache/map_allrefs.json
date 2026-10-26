@@ -1,6 +1,5 @@
 {
 	"name": "all_refs",
 	"type": "map",
-	"storeClass": "storage.idmap.redis.ReferenceMap",
-	"db": 3
+	"storeClass": "storage.idmap.postgres.ReferenceMap"
 }
