@@ -60,6 +60,7 @@
   "log_dir": "logs",
   "tests_dir": "tests",
   "temp_dir": "temp",
+  "backup_dir": "backups",
   "path_types": {
     "reconcileDumpPath": "dumps_dir",
     "dumpFilePath": "dumps_dir",
