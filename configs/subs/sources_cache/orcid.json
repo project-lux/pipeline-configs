@@ -14,5 +14,5 @@
   "mapperClass": "sources.orcid.mapper.OrcidMapper",
   "dumps_dir": "orcid",
   "remoteDumpFile": "https://orcid.figshare.com/ndownloader/files/49560102",
-  "dumpFilePath": "orcid/orcid-summaries.tar.gz"
+  "dumpFilePath": "orcid/orcid.tgz"
 }

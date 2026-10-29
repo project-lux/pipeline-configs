@@ -20,9 +20,9 @@
   "input_files": {
     "records": [
       {
-        "url": "https://data.dnb.de/opendata/authorities-gnd_entityfacts.jsonld.gz",
-        "path": "authorities-gnd_entityfacts.jsonld.gz",
-        "type": "arraylines.gz/json"
+        "url": "https://data.dnb.de/opendata/authorities-gnd_entityfacts.ndjson.gz",
+        "path": "authorities-gnd_entityfacts.ndjson.gz",
+        "type": "lines.gz/json"
       },
       {
         "url": "https://data.dnb.de/opendata/authorities-gnd-sachbegriff_lds.jsonld.gz",

@@ -17,5 +17,6 @@
   "mapperClass": "sources.lux.final.mapper.Cleaner",
   "reconcilerClass": "sources.lux.final.reconciler.GlobalReconciler",
   "indexLoaderClass": "sources.lux.final.index_loader.GlobalIndexLoader",
-  "acquirerClass": null
+  "acquirerClass": null,
+  "trash_non_yale_images": true
 }
