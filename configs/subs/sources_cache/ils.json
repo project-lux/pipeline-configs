@@ -12,6 +12,15 @@
   ],
   "merge_order": 4,
   "dumpFilePath": "yul",
+  "input_files": {
+    "records": [
+      {
+        "path": "yul",
+        "type": "dir/lines.gz/json",
+        "slice": "files"
+      }
+    ]
+  },
   "totalRecords": 35000000,
   "mapperClass": "sources.yale.library.mapper.YulMapper",
   "loaderClass": "sources.yale.library.loader.YulLoader",
