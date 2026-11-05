@@ -14,6 +14,7 @@
   ],
   "activitystreams_cache_source": "activitystreams",
   "merge_order": 3,
+  "portal": true,
   "mapperClass": "sources.yale.ypm.mapper.YpmMapper",
   "harvesterClass": "process.base.harvester.ASHarvester",
   "loaderClass": "sources.yale.ypm.loader.YpmLoader",
