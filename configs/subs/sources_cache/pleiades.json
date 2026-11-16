@@ -24,18 +24,6 @@
         "path": "pleiades-places-latest.json.gz",
         "type": "graph.gz/raw"
       }
-    ],
-    "export": [
-      {
-        "url": "https://yale-lux-data.s3.amazonaws.com/sources/pleiades-types.zip",
-        "path": "pleiades-types.zip",
-        "type": "zip.bz2/json"
-      },
-      {
-        "url": "https://yale-lux-data.s3.amazonaws.com/sources/pleiades-places.zip",
-        "path": "pleiades-places.zip",
-        "type": "zip.bz2/json"
-      }
     ]
   },
   "loaderClass": "sources.pleiades.loader.PleiadesLoader",

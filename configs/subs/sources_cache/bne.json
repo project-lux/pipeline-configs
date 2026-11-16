@@ -32,13 +32,6 @@
         "url": "https://www.bne.es/media/datosgob/catalogo-autoridades/materia/materia-JSON.zip",
         "type": "zip/array/raw"
       }
-    ],
-    "export": [
-      {
-        "url": "https://yale-lux-data.s3.amazonaws.com/sources/bne.zip",
-        "path": "bne.zip",
-        "type": "zip.bz2/json"
-      }
     ]
   },
   "loaderClass": "sources.bne.loader.BneLoader"

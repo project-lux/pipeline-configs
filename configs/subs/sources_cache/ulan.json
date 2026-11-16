@@ -27,14 +27,5 @@
       "path": "label_to_ulan.lmdb"
     }
   },
-  "dumps_dir": "ulan",
-  "input_files": {
-    "export": [
-      {
-        "url": "https://yale-lux-data.s3.amazonaws.com/sources/ulan.zip",
-        "path": "ulan.zip",
-        "type": "zip.bz2/json"
-      }
-    ]
-  }
+  "dumps_dir": "ulan"
 }

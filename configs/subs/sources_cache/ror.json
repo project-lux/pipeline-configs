@@ -17,14 +17,5 @@
   "downloadMdUrl": "https://zenodo.org/api/records/6347574",
   "downloadXPath": "files[0]/links/self",
   "dumps_dir": "ror",
-  "input_files": {
-    "export": [
-      {
-        "url": "https://yale-lux-data.s3.amazonaws.com/sources/ror.zip",
-        "path": "ror.zip",
-        "type": "zip.bz2/json"
-      }
-    ]
-  },
   "dumpFileType": "zip/array/raw"
 }

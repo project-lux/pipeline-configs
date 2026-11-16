@@ -8,8 +8,5 @@
     "fetcherClass": "sources.wikimedia.fetcher.WmFetcher",
     "mapperClass": "sources.wikimedia.mapper.WmMapper",
     "totalRecords": 43000000,
-    "dumps_dir": "wikimedia",
-    "input_files": {
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/wikimedia.zip", "path": "wikimedia.zip", "type": "zip.bz2/json"}]
-    }
+    "dumps_dir": "wikimedia"
 }
