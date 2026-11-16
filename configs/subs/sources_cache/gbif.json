@@ -10,8 +10,5 @@
     "fetcherClass": "process.base.fetcher.Fetcher",
     "mapperClass": "sources.gbif.mapper.GbifMapper",
 
-    "dumps_dir": "gbif",
-    "input_files": {
-        "export": [{"url": "https://yale-lux-data.s3.amazonaws.com/sources/gbif.zip", "path": "gbif.zip", "type": "zip.bz2/json"}]
-    }
+    "dumps_dir": "gbif"
 }

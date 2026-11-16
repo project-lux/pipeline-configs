@@ -35,13 +35,6 @@
         "url": "https://data.dnb.de/opendata/mapping-authorities-gnd-lcsh-ram_lds.jsonld.gz",
         "path": "mapping-authorities-gnd-lcsh-ram_lds.jsonld.gz"
       }
-    ],
-    "export": [
-      {
-        "url": "https://yale-lux-data.s3.amazonaws.com/sources/dnb.zip",
-        "path": "dnb.zip",
-        "type": "zip.bz2/json"
-      }
     ]
   }
 }

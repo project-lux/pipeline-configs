@@ -37,13 +37,6 @@
         "path": "4.tar.gz",
         "type": "tar.gz/entities/raw"
       }
-    ],
-    "export": [
-      {
-        "url": "https://yale-lux-data.s3.amazonaws.com/sources/bnf.zip",
-        "path": "bnf.zip",
-        "type": "zip.bz2/json"
-      }
     ]
   }
 }
