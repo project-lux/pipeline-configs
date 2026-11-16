@@ -7,6 +7,10 @@
 
     "fetcherClass": "sources.wikimedia.fetcher.WmFetcher",
     "mapperClass": "sources.wikimedia.mapper.WmMapper",
+    "loaderClass": "sources.wikimedia.loader.WmLoader",
     "totalRecords": 43000000,
-    "dumps_dir": "wikimedia"
+    "dumps_dir": "wikimedia",
+    "input_files": {
+        "records": [{"path": "commonswiki", "type": "dir/mediawiki.bz2/raw", "slice": "files"}]
+    }
 }
