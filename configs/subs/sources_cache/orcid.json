@@ -12,7 +12,9 @@
   "merge_order": 102,
   "loaderClass": "sources.orcid.loader.OrcidLoader",
   "mapperClass": "sources.orcid.mapper.OrcidMapper",
+  "downloaderClass": "sources.orcid.downloader.OrcidDownloader",
   "dumps_dir": "orcid",
-  "remoteDumpFile": "https://orcid.figshare.com/ndownloader/files/49560102",
+  "downloadMdUrl": "https://api.figshare.com/v2/articles/34697766",
+  "shards": 24,
   "dumpFilePath": "orcid/orcid.tgz"
 }
