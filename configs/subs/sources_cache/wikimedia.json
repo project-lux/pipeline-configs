@@ -8,6 +8,7 @@
     "fetcherClass": "sources.wikimedia.fetcher.WmFetcher",
     "mapperClass": "sources.wikimedia.mapper.WmMapper",
     "loaderClass": "sources.wikimedia.loader.WmLoader",
+    "image_extensions": ["jpg", "jpeg", "png", "gif", "webp", "svg"],
     "totalRecords": 43000000,
     "dumps_dir": "wikimedia",
     "input_files": {
