@@ -12,5 +12,10 @@
     "dumps_dir": "wikimedia",
     "input_files": {
         "records": [{"path": "commonswiki", "type": "dir/mediawiki.bz2/raw", "slice": "files"}]
+    },
+    "rsync": {
+        "source": "rsync://dumps.wikimedia.your.org/wikimedia-dumps/commonswiki/latest/",
+        "path": "commonswiki",
+        "include": ["commonswiki-latest-pages-articles-multistream[0-9]*.xml-p*.bz2"]
     }
 }
