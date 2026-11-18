@@ -1,0 +1,7 @@
+{
+  "name": "type_overrides",
+  "type": "artifact",
+  "generatorClass": "lux_pipeline.artifacts.languages.LanguageTypes",
+  "files": ["type_overrides.json"],
+  "maxAgeDays": 180
+}
