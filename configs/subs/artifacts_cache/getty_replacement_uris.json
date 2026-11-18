@@ -1,0 +1,7 @@
+{
+  "name": "getty_replacement_uris",
+  "type": "artifact",
+  "generatorClass": "lux_pipeline.artifacts.getty.ReplacementUris",
+  "files": ["getty_replacement_uris.json"],
+  "maxAgeDays": 90
+}
